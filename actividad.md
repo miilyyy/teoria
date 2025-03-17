@@ -73,8 +73,18 @@ Filas: Cada línea del archivo CSV corresponde a una fila de datos.
 Columnas: Los valores dentro de una fila se separan por un delimitador (usualmente una coma).
 Encabezado (opcional): La primera fila puede contener los nombres de las columnas (encabezado).
 
+que es un data frame?
+##Un DataFrame es una estructura de datos bidimensional proporcionada por la librería Pandas en Python, que se utiliza para almacenar y manipular datos tabulares (como hojas de cálculo o tablas de bases de datos). Un DataFrame tiene filas y columnas, donde cada columna puede ser de diferentes tipos de datos (números, texto, fechas, etc.).
+que es pandas y para que sirve?
 
+##Pandas es una librería de Python muy popular utilizada para el análisis y manipulación de datos. Proporciona estructuras de datos rápidas y flexibles, como DataFrame y Series, que permiten trabajar con datos tabulares de manera eficiente.
+que es un data set?
 
+##Un dataset es una colección de datos organizados de manera estructurada, generalmente en forma de tablas, donde cada fila representa un registro y cada columna una característica o variable del dato
+
+actividad
+
+como abrir un csv con phyton utilizando la libreria pandas
 
 
 
