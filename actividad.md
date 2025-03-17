@@ -65,6 +65,13 @@ bash
 Copiar
 python get-pip.py
 
+¿que es un csv?
+como funciona el formato?
+Un CSV (Comma-Separated Values) es un formato de archivo que almacena datos tabulares en forma de texto. Cada línea del archivo representa una fila, y los valores dentro de cada fila están separados por comas (u otros delimitadores como punto y coma).
+Cómo funciona:
+Filas: Cada línea del archivo CSV corresponde a una fila de datos.
+Columnas: Los valores dentro de una fila se separan por un delimitador (usualmente una coma).
+Encabezado (opcional): La primera fila puede contener los nombres de las columnas (encabezado).
 
 
 
