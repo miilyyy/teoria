@@ -1,1 +1,45 @@
+obtener el nombre de todos los usuarios mayores a 20 años de los siguientes paises : españa, francia y turquia. Cuanto son masculinos y ciantos son femeninos. hacer un grafico con Marplotlib.
+Obtener todos los usuarios entre las edades de 45 a 60.Cuantos son masculinos y cuantos son femeninos, hacer un grafico con MatPlotLib.
 
+ACTIVIDADES RESUELTAS
+ACTIVIDAD 1 
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv("users.csv")
+paises = ['Spain', 'France', 'Turkey']
+mayores_20 = df[(df['edad'] > 20) & (df['pais'].isin(paises))]
+
+masculinos = mayores_20[mayores_20['genero'].str.lower() == 'male']['nombre']
+femeninos = mayores_20[mayores_20['genero'].str.lower() == 'female']['nombre']
+
+print("Usuarios masculinos mayores a 20 de Spain, France y Turkey:", len(masculinos))
+print("Usuarios femeninos mayores a 20 de Spain, France y Turkey:", len(femeninos))
+
+counts = [len(masculinos), len(femeninos)]
+labels = ['Masculinos', 'Femeninos']
+
+plt.bar(labels, counts, color=['blue', 'pink'])
+plt.title('Usuarios mayores a 20 años por género')
+plt.ylabel('Cantidad')
+plt.show()
+
+ACTIVIDAD 2
+ 
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv("users.csv")
+usuarios_45_60 = df[(df['edad'] >= 45) & (df['edad'] <= 60)]
+
+masculinos_45_60 = usuarios_45_60[usuarios_45_60['genero'].str.lower() == 'male']['nombre']
+femeninos_45_60 = usuarios_45_60[usuarios_45_60['genero'].str.lower() == 'female']['nombre']
+
+print("Usuarios masculinos entre 45 y 60 años:", len(masculinos_45_60))
+print("Usuarios femeninos entre 45 y 60 años:", len(femeninos_45_60))
+
+counts_45_60 = [len(masculinos_45_60), len(femeninos_45_60)]
+labels_45_60 = ['Masculinos', 'Femeninos']
+
+plt.bar(labels_45_60, counts_45_60, color=['Lightblue', 'pink'])
+plt.title('Usuarios entre 45 y 60 años por género')
+plt.ylabel('Cantidad')
+plt.show()
